@@ -41,8 +41,8 @@ if(!image_url){
 
   res.status(200).sendFile(filtered_image,()=>{
     deleteLocalFiles([filtered_image]);
-  })
-})
+  });
+});
 
   // Root Endpoint
   // Displays a simple message to the user
