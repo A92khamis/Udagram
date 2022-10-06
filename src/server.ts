@@ -39,7 +39,7 @@ if(!image_url){
 }
   const filtered_image = await filteredImageFromURL(image_url);
 
-  res.status(200).sendFile(filteredImageFromURL,()=>{
+  res.status(200).sendFile(filtered_image,()=>{
     deleteLocalFiles([filtered_image]);
   })
 })
